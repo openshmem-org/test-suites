@@ -4,3 +4,6 @@
 [submodule "tests-mellanox"]
 	path = tests-mellanox
 	url = git@github.com:openshmem-org/tests-mellanox
+[submodule "tests-uh"]
+	path = tests-uh
+	url = git@github.com:openshmem-org/tests-uh
