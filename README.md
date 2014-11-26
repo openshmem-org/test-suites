@@ -9,4 +9,6 @@ Meta collection of vendor test suites.  This repository does not contain any of 
 
 `git pull` - When in the top level of this repository, this is needed to pull in the latest links to the various test suites.  If done inside a submodule's directory, it will instead only attempt to pull that suite's latest changes.
 
-`git submodule update` - After a checkout or (top level) pull, run this to check out the commit referenced by the submodule link for each test suite.  Git will automatically pull any remote objects needed from the appropriate repositories.
+`git submodule update --recursive` - After a checkout or (top level) pull, run this to check out the commit referenced by the submodule link for each test suite.  Git will automatically pull any remote objects needed from the appropriate repositories.
+
+`git submodule foreach git pull origin master` - Get *latest* version of each submodule
